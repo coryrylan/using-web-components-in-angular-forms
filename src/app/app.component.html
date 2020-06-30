@@ -3,7 +3,7 @@
 
 <h2>Web Component</h2>
 <p>{{count}}</p>
-<x-counter [value]="count" (valueChange)="count = $event.detail"></x-counter>
+<x-counter [value]="count" (valueChange)="updateCount($event)"></x-counter>
 
 
 <h2>Angular Reactive Forms Component using Web Component</h2>

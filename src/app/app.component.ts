@@ -10,4 +10,8 @@ export class AppComponent  {
   count = 1;
   count2 = 3;
   counter = new FormControl(2, Validators.min(0));
+
+  updateCount(event: any) {
+    this.count = event.detail;
+  }
 }

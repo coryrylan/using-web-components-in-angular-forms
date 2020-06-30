@@ -1,0 +1,17 @@
+<h1>Leveling up Web Components in Angular</h1>
+
+
+<h2>Web Component</h2>
+<p>{{count}}</p>
+<x-counter [value]="count" (valueChange)="count = $event.detail"></x-counter>
+
+
+<h2>Angular Reactive Forms Component using Web Component</h2>
+<p>{{counter.value}}</p>
+<p>Valid (min value 0): {{counter.valid}}</p>
+<x-counter [formControl]="counter"></x-counter>
+
+
+<h2>Angular Template Forms Component using Web Component</h2>
+<p>{{count2}}</p>
+<x-counter [(ngModel)]="count2"></x-counter>
